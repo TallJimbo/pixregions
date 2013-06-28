@@ -34,11 +34,10 @@ from astropy.setup_helpers import (register_commands, adjust_compiler,
 from astropy.version_helpers import get_git_devstr, generate_version_py
 
 # Set affiliated package-specific settings
-PACKAGENAME = 'packagename'
-DESCRIPTION = 'Astropy affiliated package'
-LONG_DESCRIPTION = ''
-AUTHOR = ''
-AUTHOR_EMAIL = ''
+PACKAGENAME = 'pixregions'
+DESCRIPTION = 'Astropy affiliated package for pixel regions and threshold-based detection'
+AUTHOR = 'Jim Bosch'
+AUTHOR_EMAIL = 'jbosch@astro.princeton.edu'
 LICENSE = 'BSD'
 URL = 'http://astropy.org'
 
@@ -102,7 +101,6 @@ setup(name=PACKAGENAME,
       author_email=AUTHOR_EMAIL,
       license=LICENSE,
       url=URL,
-      long_description=LONG_DESCRIPTION,
       cmdclass=cmdclassd,
       zip_safe=False,
       use_2to3=True
